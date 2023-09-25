@@ -16,3 +16,8 @@
 - [UdD PVMO (Rein Version)](09-20-23/UdD_PVMO_(Rein)/)
 - [UdD PVMO (Sam Version)](09-20-23/UdD_PVMO_(Sam)/)
 - [Lorem Ipsum (Personal Practice)](09-20-23/Lorem_Ipsum_(Personal_Practice)/)
+
+#### 09-25-23 (Personal Practice)
+- [Hello, World!](09-25-23/HelloWorld/)
+- [UdD PVMO](09-25-23/PVMO/)
+- [UdD Hymn](09-25-23/UniversityHymn/)
