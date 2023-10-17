@@ -21,3 +21,7 @@
 - [Hello, World!](09-25-23/HelloWorld/)
 - [UdD PVMO](09-25-23/PVMO/)
 - [UdD Hymn](09-25-23/UniversityHymn/)
+
+#### 10-17-23 (Personal Practice)
+- [Lorem Ipsum Practice](10-17-23/Lorem_Ipsum_Practice/)
+- [Computer Specs Practice](10-17-23/Computer_Specs_Practice/)
