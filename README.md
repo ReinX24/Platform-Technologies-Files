@@ -25,3 +25,6 @@
 #### 10-17-23 (Personal Practice)
 - [Lorem Ipsum Practice](10-17-23/Lorem_Ipsum_Practice/)
 - [Computer Specs Practice](10-17-23/Computer_Specs_Practice/)
+
+#### 10-25-23
+- [UDD Hymn Activity Solution](10-25-23/UDD_Hymn_Activity/)
