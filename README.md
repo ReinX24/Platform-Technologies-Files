@@ -28,3 +28,6 @@
 
 #### 10-25-23
 - [UDD Hymn Activity Solution](10-25-23/UDD_Hymn_Activity/)
+
+#### 01-16-24
+- [Color Text Program](01-16-24/ColorText/)

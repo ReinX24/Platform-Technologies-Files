@@ -16,6 +16,12 @@ BEGIN:
     int 10H ; IMPLEMENT THE CONFIGURATION
     ; Link to video: https://youtu.be/BKtQc3Fr4Os?si=gkWHtQCv2w9eVNm9
     
+    ; Sets background color to purplve
+    mov ah, 0Bh
+    mov bh, 0  ; Display page
+    mov bl, 0DH ; Light purple background
+    int 10H
+    
     mov ah, 09h
     LEA dx, hymnTitle
     int 21H
