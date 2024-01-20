@@ -30,4 +30,13 @@
 - [UDD Hymn Activity Solution](10-25-23/UDD_Hymn_Activity/)
 
 #### 01-16-24
-- [Color Text Program](01-16-24/ColorText/)
+- [PVMO / UDD HYMN Colortext](01-16-24/ColorText/)
+- [Name and Section](01-16-24/NameAndSection/)
+- [PVMO / UDD HYMN](01-16-24/PVMOHymn/)
+
+#### FINALS REQUIREMENTS
+- [Name and Section](01-16-24/NameAndSection/)
+- [PVMO / UDD HYMN](01-16-24/PVMOHymn/)
+- [PVMO LEA](09-25-23/PVMO/)
+- [UDD HYMN LEA](09-25-23/UniversityHymn/)
+- [PVMO / UDD Hymn Colortext](01-16-24/ColorText/)

@@ -21,7 +21,7 @@
     mov ax, @DATA
     mov ds, ax
     mov es, ax
-
+    
     ; Printing UniversityTitle
     mov ah, 09H
     LEA dx, UniversityTitle

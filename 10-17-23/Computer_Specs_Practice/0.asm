@@ -1,57 +1,78 @@
-; Print your current computer specifications
 .model small
 .stack
 .data
-    TitleHeader db 09h, 0ah, "[Rein Solis Computer Specifications]$"
-    Processor db 09h, 0ah, "CPU: Ryzen 5600G$"
-    OperatingSystem db 09h, 0ah, "Operating System: Windows 11 Pro 64 Bit$"
-    Motherboard db 09h, 0ah, "Motherboard: A520M K V2$"
-    Memory db 09h, 0ah, "Memory: 16 GB$"
-    Storage db 09h, 0ah, "Storage: 512 GB$"
-    Monitor db 09h, 0ah, "Monitor: Acer EK220Q$"
-    Keyboard db 09h, 0ah, "Keyboard: Rakk Illis (Red Switches)$"
-    Mouse db 09h, 0ah, "Mouse: Corsair Katar Pro$"
+    TitleHeader db 13, 10, 27, " [Rein Solis Computer Specifications]", 13, 10, "$"
+    Processor db 13, 10, 27, " CPU: Ryzen 5600G", 13, 10, "$"
+    OperatingSystem db 13, 10, 27, " Operating System: Windows 11 Pro 64 Bit", 13, 10, "$"
+    Motherboard db 13, 10, 27, " Motherboard: A520M K V2", 13, 10, "$"
+    Memory db 13, 10, 27, " Memory: 16 GB", 13, 10, "$"
+    Storage db 13, 10, 27, " Storage: 512 GB", 13, 10, "$"
+    Monitor db 13, 10, 27, " Monitor: Acer EK220Q", 13, 10, "$"
+    Keyboard db 13, 10, 27, " Keyboard: Rakk Illis (Red Switches)", 13, 10, "$"
+    Mouse db 13, 10, 27, " Mouse: Corsair Katar Pro", 13, 10, "$"
+
 .code
     BEGIN:
     
     mov ax, @DATA
     mov ds, ax
-    mov es, ax
     
+    ; Set text color (red)
+    mov ah, 10h
+    mov al, 02h ; Color code for red
+    int 10h
+    
+    ; Print TitleHeader
     mov ah, 09h
-    LEA dx, TitleHeader
-    int 21H
+    lea dx, TitleHeader
+    int 21h
     
+    ; Print Processor
     mov ah, 09h
-    LEA dx, Processor
-    int 21H
+    lea dx, Processor
+    int 21h
     
+    ; Print OperatingSystem
     mov ah, 09h
-    LEA dx, OperatingSystem
-    int 21H
+    lea dx, OperatingSystem
+    int 21h
     
+    ; Print Motherboard
     mov ah, 09h
-    LEA dx, Motherboard
-    int 21H
+    lea dx, Motherboard
+    int 21h
     
+    ; Print Memory
     mov ah, 09h
-    LEA dx, Memory
-    int 21H
+    lea dx, Memory
+    int 21h
     
+    ; Print Storage
     mov ah, 09h
-    LEA dx, Storage
-    int 21H
+    lea dx, Storage
+    int 21h
     
+    ; Print Monitor
     mov ah, 09h
-    LEA dx, Monitor
-    int 21H
+    lea dx, Monitor
+    int 21h
     
+    ; Print Keyboard
     mov ah, 09h
-    LEA dx, Keyboard
-    int 21H
+    lea dx, Keyboard
+    int 21h
     
+    ; Print Mouse
     mov ah, 09h
-    LEA dx, Mouse
-    int 21H
+    lea dx, Mouse
+    int 21h
     
+    ; Reset text color
+    mov ah, 10h
+    mov al, 07h ; Color code for white
+    int 10h
+    
+    ; Exit program
+    mov ah, 4Ch
+    int 21h
     END BEGIN

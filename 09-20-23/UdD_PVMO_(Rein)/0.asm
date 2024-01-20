@@ -17,7 +17,7 @@
     mov ax, @DATA ; this loads all of our variables in .data to the ax register
     mov ds, ax ; moving the data in ax to our ds register (data segment)
     ; mov es, ax ; also moving the data in es register (extra segment) 
-    
+        
     ; Printing the philosophy
     mov ah, 09H ; puts the print text function (09H) in the ah register
     LEA dx, philosophy ; LEA : load effective address. Stores the text in the dx register

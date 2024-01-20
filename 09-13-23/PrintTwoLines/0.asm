@@ -9,12 +9,23 @@
     ExampleTwo db "John Carmack IdSoftware - DOOM", 0ah, "Richard Stallman GNU-LINUX$" ; 0ah breaks the String into a new line
 .code
 BEGIN:
+    
+    mov ah, 09h
+    mov bl, 3 ; color, eg aqua in this case
+    mov cx, 20 ; number of chars
+    int 10h
+
     ; Printing two lines above each other
     mov dx, OFFSET NameOne
     mov ax, SEG NameOne
     mov ds, ax
     mov ah, 9D
     int 21H
+    
+    mov ah, 09h
+    mov bl, 9 ; color, eg bright blue in this case
+    mov cx, 11 ; number of chars
+    int 10h
     
     mov dx, OFFSET NameTwo
     mov ax, SEG NameTwo
